@@ -33,7 +33,7 @@ PRODUCT_PACKAGES += \
     SettingsIntelligence \
     frameworks-base-overlays
 
-ifeq ($(CUSTOM_BUILD),)
+ifeq ($(HORIZON_BUILD),)
 PRODUCT_PACKAGES += \
     Camera2 \
     LatinIME
