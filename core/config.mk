@@ -456,6 +456,7 @@ FIND_LEAVES_EXCLUDES := $(addprefix --prune=, $(SCAN_EXCLUDE_DIRS) .repo .git)
 -include vendor/extra/BoardConfigExtra.mk
 ifneq ($(HORIZON_BUILD),)
 include vendor/horizon/config/BoardConfigHorizon.mk
+
 endif
 
 # The build system exposes several variables for where to find the kernel
@@ -1292,7 +1293,11 @@ include $(BUILD_SYSTEM)/sysprop_config.mk
 # consistency with those defined in BoardConfig.mk files.
 include $(BUILD_SYSTEM)/android_soong_config_vars.mk
 
+<<<<<<< HEAD
 ifneq ($(HORIZON_BUILD),)
+=======
+ifneq ($(CUSTOM_BUILD),)
+>>>>>>> 757b7e7ab2 (Merge tag 'android-15.0.0_r20' into fifteen)
 ifneq ($(wildcard device/lineage/sepolicy/common/sepolicy.mk),)
 ## We need to be sure the global selinux policies are included
 ## last, to avoid accidental resetting by device configs

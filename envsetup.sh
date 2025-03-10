@@ -1194,6 +1194,7 @@ set_global_paths
 source_vendorsetup
 addcompletions
 
+<<<<<<< HEAD
 # check and set ccache path on envsetup
 if [ -z ${CCACHE_EXEC} ]; then
     ccache_path=$(which ccache)
@@ -1213,3 +1214,8 @@ fi
 export ANDROID_BUILD_TOP=$(gettop)
 
 . $ANDROID_BUILD_TOP/vendor/horizon/build/envsetup.sh
+=======
+export ANDROID_BUILD_TOP=$(gettop)
+
+. $ANDROID_BUILD_TOP/vendor/aosp/build/envsetup.sh
+>>>>>>> 757b7e7ab2 (Merge tag 'android-15.0.0_r20' into fifteen)
